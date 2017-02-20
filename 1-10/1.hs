@@ -1,6 +1,9 @@
 myLast [x] = x
 myLast (_:xs) = myLast xs
 
-myLast' = last
+myLast2 = last
 
-myLast'' = head . reverse
+myLast3 = head . reverse
+myLast4 = foldl (\acc x -> x) 0
+myLast5 = foldl (const id) 0
+myLast6 = foldl1 (const id)
